@@ -12,20 +12,7 @@ if [ -z "$project" ]; then
   exit 1
 fi
 
-declare -A ubuntu_aliases=(["gdm"]="gdm3"
-                           ["gnome-desktop"]="gnome-desktop3"
-                           ["gtk"]="gtk+3.0"
-                           ["gtk2"]="gtk+2.0"
-                           ["vte"]="vte2.91")
-declare -A ubuntu_bzr_aliases=(["gnome-calculator"]="gcalctool"
-                               ["gtk2"]="gtk")
-declare -A ubuntu_bzr_sufix_aliases=(["vte"]="-vte2.91"
-                                     ["gtk"]="gtk3")
-declare -A debian_team=(["empathy"]="telepathy-team"
-                        ["simple-scan"]="debian")
-declare -A debian_aliases=(["vte"]="vte2.91"
-                           ["gtk"]="gtk3")
-declare -A upstream_project=(["gtk2"]="gtk")
+source "$(dirname $0)/projects-mapping.source"
 
 function version_to_tag()
 {
