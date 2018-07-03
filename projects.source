@@ -1,0 +1,23 @@
+IMPORTER_PROJECTS="file-roller
+                   gdm
+                   gedit
+                   gnome-calculator
+                   gnome-control-center
+                   gnome-desktop
+                   gnome-keyring
+                   gnome-menus
+                   gnome-screensaver
+                   gnome-session
+                   gnome-settings-daemon
+                   gnome-shell
+                   gnome-software
+                   gnome-terminal
+                   gnome-themes-extra
+                   gtk
+                   gtk2
+                   nautilus
+                   rhythmbox
+                   simple-scan
+                   totem
+                   vte
+                   vino"
